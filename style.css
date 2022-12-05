@@ -1,0 +1,273 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+  
+    
+}
+
+body{
+    background-color: #f9f9f9;
+}
+:root{
+    --greencolor:#3db83a;
+    --orangecolor: #E18700;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+     justify-content: space-between;
+     background-color: var(--greencolor);
+     align-items: center;
+     margin-bottom: 1px;
+     box-shadow: 0px 0px 5px #999999;
+}
+
+.links{
+    display: flex;
+}
+
+.logo{
+    width: 10vw;
+    height: 10vh;
+    object-fit: contain;
+}
+
+.links li{
+    list-style-type: none;
+    margin: 0 1rem;
+}
+
+.links li a{
+    text-decoration: none;
+    font-weight: bold;
+    font-family: cursive;
+    color: #fff;
+}
+
+.links li button{
+    background-color: var(--orangecolor);
+   /* border: 2px solid red;
+    outline: 2px solid blue;
+    */
+    border-radius: 4px;
+    border:none;
+    padding: .4rem;
+    color:#fff;
+}
+
+.links li:active{
+    background-color: red;
+}
+
+.banner{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--greencolor);
+}
+
+.banner img{
+    width: 20rem;
+    height: fit-content;
+    object-fit: contain;
+}
+
+.banner .loc{
+    background-color: #000;
+    color:#fff;
+    padding: 0.4rem;
+    opacity: 0.5;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.banner .loc:hover{
+    opacity: 1;
+}
+
+.banner .searchbox{
+    border: none;
+    outline: none!important;
+    background-color: transparent;
+}
+.banner .search{
+    
+    background-color: #fff;
+    padding: .6rem 0;
+    border-radius: 3px;
+    margin-top: 2rem;
+}
+
+.banner .search .fa-search{
+    color: var(--greencolor);
+}
+
+main aside{
+background-color: #fff;
+box-shadow: 5px 0 1px #999;
+}
+
+main aside div{
+    font-size: 1rem;
+    font-family: cursive;
+    margin: 1rem 0.4rem ;
+}
+
+main aside div:hover{
+    background-color: #f3f3f3;
+    padding: .5rem;
+}
+
+main aside div i{
+    float: right;
+}
+
+
+
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+main aside{
+    flex: 1;
+}
+
+main section{
+    flex:3;
+}
+
+.market{
+    margin: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.item{
+    box-shadow: 0 0 1px #999;
+    border-radius: 5px;
+    margin: 3px;
+
+}
+
+.item img{
+    width: 100%;
+    height: 30vh;
+    object-fit: cover;
+}
+
+.item img:hover{
+    transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+    transform: scale(1.09);
+}
+
+/* 
+
+screen dimension
+0-576px (xs)
+576 - 768px (sm)
+768 - 992 (md)
+992 - 1200 (lg)
+1200 - upward(xl)
+
+*/
+
+.item p{
+    color:#303a4b;
+    font-weight: 200;
+}
+
+.item small{
+    color:var(--greencolor)
+}
+.item .img_design{
+    position: relative;
+    margin-bottom: 2rem;
+    z-index: 1
+}
+.item .fa-bookmark{
+    font-weight: 100;
+    color: var(--greencolor);
+    position: absolute;
+    left: 40%;
+    top: 90%;
+   background-color: #fff;
+   padding: .5rem;
+   border-radius: 50%;
+   box-shadow: 0 0 2px #999;
+
+}
+
+.formbody{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.input{
+    width: 100%;
+    padding: 0.4rem;
+    border-radius: 3px;
+}
+
+form div{
+    margin-bottom: 1rem
+}
+
+form button{
+    width: 100%;
+    background-color: #303a4b;
+    color:#fff;
+    padding: 0.3rem 0;
+}
+
+form button:hover{
+    background-color: #3031ff;
+}
+
+.btnclass{
+    background-color: red;
+    margin: 2rem auto;
+    display: block;
+}
+
+.anotherclass{
+    min-height: 3rem;
+    text-align:center;
+}
+
+/* media query for xs screen  */
+
+.toggler{
+    display: none
+}
+
+@media(max-width: 768px){
+    .banner{
+        flex-direction: column;
+        
+    }
+
+    main{
+        flex-direction: column;
+        
+    }
+
+    .item{
+        width: 100%;
+    }
+
+}
+
+@media (max-width:1079px) {
+    .banner .loc{
+        display: block;
+    }
+
+    
+}

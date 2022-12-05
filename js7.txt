@@ -1,0 +1,125 @@
+//var header = document.getElementById("header");
+//
+//var newElement = document.createElement("button") // <button></button>
+//
+//
+//newElement.innerHTML = "close" // <button>close</button>
+//
+//newElement.setAttribute("class", "btnclass")
+//
+//header.append(newElement)
+//
+//
+//
+//console.log(header.children)
+//
+//
+//
+//var newH1 = document.createElement("h1")
+//newH1.innerHTML = "Hello world"
+//
+//newH1.classList.add("btnclass", "anotherclass")
+//
+////newH1.classList.remove("anotherclass")
+//
+//var body = document.body
+//
+//body.insertBefore(newH1, body.children[2])
+
+//var header = document.getElementById("header")
+//var header = document.getElementById("header")
+//header.removeChild(header.children[2])
+//
+//function handleSubmit(){
+//  var name = document.getElementById("myname").value
+//  var email = document.getElementById("myemail").value
+//  var pwd = document.getElementById("mypwd").value
+//
+//  try{
+//   if(name ==  "" || email == "" || pwd == ""){
+//    console.log("err")
+//   }
+//
+//  }catch(error){
+//    console.log(error)
+//  }
+//}
+
+
+
+//var check = new Promise(function(onsuccess, onerror){
+// fetch("https://randomuser.me/api/?results=10")
+// .then((res) => res.json())
+// .then((res) => onsuccess(res))
+// .catch((err) => onerror(err))
+//
+//
+//})
+//
+//
+//check.then(function(res){
+//  console.log(res)
+//}, 
+//function(err){
+//  console.log(err)
+//})
+
+//function person(name, age){
+//  return console.log(name + age)
+//}
+//
+//person("enuka", 1)
+
+function calc(a , b){
+ return console.log( a * b)
+}
+
+calc()
+
+class Person{
+  constructor(name, gender){
+   this.myname = name;
+   this.mygender = gender; 
+  }
+
+  getInfo(){
+    alert(`my name is ${this.myname} and i am a ${this.mygender} `)
+  }
+}
+
+class Car extends Person{
+  constructor(name, gender, model, year){
+    super(name, gender)
+    this.mymodel = model
+    this.myyear = year
+  }
+
+  getInfo(){
+    alert(`${this.myname} bought  ${this.mymodel} and is ${this.myyear} `)
+  }
+}
+
+
+
+
+const person1 = new Person("seyi", "m")
+const person2 = new Person("sola", "f")
+const car1 = new Car("taiwo","female","camry", 2000)
+const car2 = new Car("ebuka", "male","audi", 2022)
+
+//person1.getInfo()
+
+//car2.getInfo()
+
+//const data = prompt("enter your date of birth - mm/dd/yy");
+//
+//var ageformat = new Date(data).getFullYear()
+//
+//var today = new Date().getFullYear()
+//dgcfvhgbjhkml;l,;lmlhgfdfygyuhic hgjhjnkj
+//alert(today - ageformat)
+
+
+var date = new Date().getFullYear()
+
+

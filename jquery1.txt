@@ -1,0 +1,55 @@
+
+//var date = new Date()
+//
+//var person1 = {
+//  name: "yusuf",
+//  state: "kwara"
+//}
+//
+//export {date, person1}
+
+
+/*
+selector in jquery
+selector in jquery is the same with css
+*/ 
+$(document).ready(function(){
+ //$("input[type='text']").change(function(){
+ // alert("you press a key")
+ //})
+//
+ //$("#btn").click(function(){
+ // $("#test").animate({
+ //   minHeight: "20px",
+ //   maxWidth: "20px",
+ //   marginLeft: "+=10"
+ //   
+ // }, 2000)
+ //})
+//
+ //$("#btn2").click(function(){
+ // $("#test").animate({
+ //   minHeight: "20px",
+ //   maxWidth: "20px",
+ //   marginLeft: "-=10"
+ //   
+ // }, 2000)
+
+ 
+//})
+
+//alert($("#sell").html())
+
+
+
+
+ 
+
+})
+
+//window.onload = function(){
+//  $(".banner").fadeIn(10000)
+//}
+
+
+

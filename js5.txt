@@ -1,0 +1,110 @@
+//write algorithm to solve ax2 + bx + c in which a, b as 3,5 as default value respectively
+//var x = prompt("Enter Value for X");
+//
+//var c = prompt("Enter Value for C")
+//
+//
+//function calc(x,c){
+//    return 3 * (x**2) + 5 * x + c
+//}
+//
+//
+//try {
+//    if(x == "") throw "empty"
+//} catch (error) {
+//    console.log(error)
+//}
+
+
+ //var a = document.getElementById("test")
+ //console.log(a)
+
+ var namepattern = /[^0-9][a-z]{3,}/ig
+
+ var emailpattern = /[\w]{3,}\@[a-z]{3,}\.[a-z]{2,}/ig
+
+var pwdpattern = /[a-z0-9]{6,}/ig
+
+ function handleSubmit(e){
+  e.preventDefault()
+    var name = document.getElementById("myname").value
+    var email = document.getElementById("myemail").value
+    var password = document.getElementById("mypwd").value
+
+   if(name === "" || email === "" || password === ""){
+    alert("input field cannot be empty");
+
+   }else if(!namepattern.test(name)){
+    alert("Enter valid Name");
+
+   }else if(!emailpattern.test(email)){
+    alert("Enter valid Email")
+   
+   }else if(!pwdpattern.test(password)){
+    alert("Enter valid Password")
+   }else{
+    alert("registration successful")
+   }
+ }
+
+//var ref = setInterval(function(){
+//  alert("interacting with browser in 5s")
+// }, 5000)
+
+// const ref = setTimeout(function(){
+//alert("this is timeout")
+//}, 5000)
+
+//window.navigator.geolocation.getCurrentPosition(onsuccess, onerror, {enableHighAccuracy: true})
+//
+//function onsuccess(position){
+//  console.log(position.coords.latitude)
+//  console.log(position.coords.longitude)
+//}
+//
+//function onerror(e){
+//  console.log(e)
+//}
+
+
+
+
+document.head.children[3].innerHTML = "Hello world"
+
+var newElement = document.createElement("h1")  // <h1></h1>
+
+newElement.innerHTML = "this is the h1 we create programmatically" 
+//<h1>this is the h1 we create programmatically</h1>
+
+document.head.append(newElement)
+
+console.log(document.head.children)
+
+var header = document.getElementById("header")
+
+console.log(header)
+
+function handleClick(){
+// clearTimeout(ref)
+window.close
+}
+
+function moveBack(){
+ //window.history.back()
+// window.location.reload()
+
+window.location.href = "/test.html"
+}
+
+function moveForward(){
+  window.history.go()
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./fontawesome/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="">Logo</a>
+
+            <ul>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+
+
+
+        </nav>
+        <section>
+            <img src="./images/banner.jpg" alt="banner images" width="1280" height="400">
+        </section>
+    </header>
+
+    <main>
+        <!-- this is category section -->
+        <section class="category">
+        
+        </section>
+
+        <!-- this is food section -->
+        <section class="food">
+
+        </section>
+
+        
+
+        <section class="subscribe">
+<!--           
+             S/N         name        SIGNIN      SIGNOUT
+            1           yusuf         yes  
+            2           kay           yes          
+            3           lasop         no
+
+
+    -->
+
+    <table>
+        <thead>
+            <tr>
+                <th
+                >S/N</th>
+                <th>NAME</th>
+                <th>Email</th>
+                <th>Password</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <tr >
+                <td>1</td>
+                <td>Yusuf</td>
+                <td>a@b.com</td>
+                <td>122456</td>
+            </tr>
+
+            <tr>
+                <td colspan="3">2</td>
+                <td colspan="3">kay</td>
+                <td>example@gmail.com</td>
+                <td>nui8</td>
+            </tr>
+        
+        </tbody>
+
+    </table>
+
+
+        </section>
+
+        <section
+         class="register">
+            <fieldset>
+                <legend>Registration form</legend>
+                <form>
+                    <div>
+                        <label for="">FirstName</label>
+                        <input type="text" name="fname"  placeholder="enter your first name">
+                    </div>
+
+                    <div>
+                        <label for="">LastName</label>
+                        <input type="text" name="lname" placeholder="enter your last name">
+                    </div>
+
+                    <div>
+                        <label for="">DOB</label>iux,u,u,cu,k
+                        <input type="date" name="dob" placeholder="enter your DOB">
+                    </div>
+
+                    <div>
+                        <label for="">Email</label>
+                        <input type="email" name="myemail" placeholder="enter your email">
+                    </div>
+
+                    <div>
+                        <label for="">Password</label>
+                        <input type="password"  name="pwd" placeholder="enter your password">
+                    </div>
+                    <!-- textarea is the same with input element except that it is useful to hold longer text -->
+                    <div>
+                        <textarea cols="20" rows="5" name="aboutme"
+                            placeholder="describe yourself"></textarea>
+                    </div>
+                    <!--- input type of select -->
+                    <select name="country">
+                        <option value="nigeria">Nigeria</option>
+                        <option value="ghana" selected>Ghana</option>
+                        <option value="southafrica">South-Africa</option>
+                    </select>
+
+                    <!-- input type radio i.e useful in picking gender or hobbies -->
+
+                    <div>
+                        <label for="">Gender</label> <br>
+                        Male: <input type="radio" value="male" name="gender">
+                        Female: <input type="radio" value="female" name="gender">
+                        Other: <input type="radio" value="other" name="gender">
+
+                    </div>
+
+                    <div>
+                        <label for="">Hobbies</label> <br>
+                        Reading: <input type="radio" value="reading" name="option1">
+                        Football: <input type="radio" value="football" name="option2">
+                        video game: <input type="radio" value="videogame" name="option3">
+
+                    </div>
+
+                    <div>
+                        <label for="">photo</label>
+                        <input type="file" name="photo">
+                    </div>
+
+                    <div>
+                        <button type="submit">Submit</button>
+                    </div>
+
+                </form>
+            </fieldset>
+        </section>
+
+    </main>
+
+    <footer>
+        <p align="center">copyright of <a href="https://esquireyusuf.ml">Esq. yusuf <i class="fa-solid fa-car"></i> 2022
+        </p>
+    </footer>
+
+</body>
+
+</html>
+<!-- internal css -->
+<style>
+        h1{
+            color: #eb4; 
+            font-style: italic;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        button{
+            width: 100px;
+            background-color: rgb(20,35,100);
+            color: #fff;
+            font-weight: bold;
+        }
+
+        small{
+            font-size: 32px;
+            font-weight: bold;
+        }
+    </style>

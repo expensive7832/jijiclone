@@ -1,0 +1,133 @@
+//alert("Hello world")
+//confirm("are you sure you want to delete?")
+
+// addition operation
+
+/*
+commony keyword in javascript
+var 
+let
+const
+if
+else
+switch
+function
+alert
+console
+ */
+
+// object store related data in key and value pair
+
+var person1 = {
+    fname: "yusuf",
+    lname: "jimoh",
+    skin: "black",
+    savings : 20000
+}
+
+var person2 = {
+    fname: "prince",
+    lname: "ebuka",
+    skin: "fair"
+}
+
+var numberArray = [123, 341,32,63,74,5,6,7,8,9,10]
+
+var alphabet = ["C", "A", "B", "C", "D", "A", "E"]
+
+
+
+person1.savings = person1.savings + 10000
+
+console.log(person1.fname + ", your account balance is now = " +  person1.savings)
+
+const mixArray = alphabet.lastIndexOf("p")
+
+//console.log(mixArray)
+
+
+//for(var i = 1; i <= 50; i+=2){
+//    console.log(i)
+//}
+
+//var a = 1;
+////
+////while(a <= 50){
+////    console.log(a);
+////    a+=2
+//}
+
+/*
+
+1 * 1 = 1
+1 * 0 = 0
+
+1 + 1 = 1
+0 + 0 = 0
+1 + 0 = 1
+0 + 1 = 1
+
+*/
+
+//var food = "snacks";
+//var drink = "pepsi"
+//
+//if(food == "snacks" && drink == "pepsi" ){
+//    alert("buying.....");
+//
+//}else{
+//    alert("your favourite is not available")
+//}
+/*
+var result = 100;
+
+
+
+
+if(result >= 75){
+    alert("A");
+
+}else if(result < 75 && result >= 60){
+    alert("B")
+
+}else if(result < 60 && result >= 50){
+    alert("C")
+
+}else if(result < 50 && result >= 40){
+    alert("D")
+
+}else{
+    alert("fail")
+}
+
+*/
+
+1 - 10
+
+for(var a = 1; a <=10; a++){
+    console.log(a)
+}
+
+var day = 20;
+
+switch(day){
+
+    case 1:
+        alert("sunday");
+        break;
+    case 2:
+        alert("monday");
+        break;
+    case 3: 
+        alert("tuesday");
+        break;
+
+    default:
+        alert("i don't know the day, please don't kill me")
+
+}
+
+var car = ["volvo", "audi"]
+
+
+
